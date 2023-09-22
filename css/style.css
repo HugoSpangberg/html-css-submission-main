@@ -526,6 +526,58 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   margin-top: 50px;
 }
 
+.choose-us .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+.choose-us .container .section-title {
+  margin: 0;
+}
+.choose-us .container .section-title .strategies {
+  display: flex;
+  flex-direction: column;
+}
+.choose-us .container .section-title .strategies .strategies-parent {
+  display: flex;
+  padding-top: 25px;
+  align-items: center;
+}
+.choose-us .container .section-title .strategies .strategies-parent i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #E7E7E7;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.choose-us .container .section-title .strategies .strategies-parent .strategies-child h4 {
+  font-family: "DM sans" sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.choose-us .container .section-title .strategies .strategies-parent .strategies-child p {
+  font-family: "inter";
+  font-size: 16px;
+  color: #5E5E5E;
+}
+.choose-us .container .background .background-parent {
+  margin-top: 135px;
+  background-color: #F0EFE9;
+  width: 1057px;
+  height: 425px;
+  position: absolute;
+  z-index: -1;
+}
+.choose-us .container .background img {
+  position: relative;
+  bottom: 0px;
+  left: 80px;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -604,7 +656,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 
 .meet-our-team {
   background-color: #EDCF86;
-  padding: 100px;
+  padding-bottom: 50px;
+  padding-top: 125px;
 }
 .meet-our-team .container .team-member {
   display: flex;
@@ -653,6 +706,54 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   background-color: #C3AB70;
   border-radius: 50%;
   margin: 10px;
+}
+
+.testimonial {
+  background-color: #EDCF86;
+  padding-bottom: 125px;
+}
+.testimonial .container {
+  background-color: #ffffff;
+  padding: 100px;
+}
+.testimonial .container .section-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.testimonial .container .clients {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.testimonial .container .clients .clients-parent i {
+  color: #F94D1C;
+}
+.testimonial .container .clients .clients-parent p {
+  margin-top: 10px;
+  margin-right: 20px;
+  line-height: 34px;
+}
+.testimonial .container .clients .clients-parent .client-child {
+  display: flex;
+  padding-top: 20px;
+}
+.testimonial .container .clients .clients-parent .client-child .text-child {
+  margin-left: 10px;
+}
+.testimonial .container .clients .clients-parent .client-child .text-child h4 {
+  font-family: "DM sans" sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: -8px;
+}
+.testimonial .container .clients .clients-parent .client-child .text-child p {
+  color: #F94D1C;
+}
+.testimonial .container .all-reviews {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 .newsletter {
