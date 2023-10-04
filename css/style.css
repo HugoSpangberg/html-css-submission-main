@@ -564,7 +564,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-size: 16px;
   color: #5E5E5E;
 }
-.choose-us .container .background .background-parent {
+.choose-us .background .background-parent {
   margin-top: 135px;
   background-color: #F0EFE9;
   width: 1057px;
@@ -572,7 +572,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   position: absolute;
   z-index: -1;
 }
-.choose-us .container .background img {
+.choose-us .background img {
   position: relative;
   bottom: 0px;
   left: 80px;
@@ -754,6 +754,49 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: flex;
   justify-content: center;
   margin-top: 60px;
+}
+
+.articlenews .container .articles-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 75px 0;
+}
+.articlenews .container .articles-title .section-title {
+  margin: 0;
+  padding: 0;
+}
+.articlenews .container .article {
+  display: flex;
+}
+.articlenews .container .article .article-section .image-date {
+  position: relative;
+}
+.articlenews .container .article .article-section .image-date .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F9D783;
+  width: 56px;
+  height: 64px;
+  position: absolute;
+  margin: 10px;
+}
+.articlenews .container .article .article-section .image-date .date h3 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+.articlenews .container .article .article-section .image-date .date h4 {
+  margin: 0;
+  color: #6C5E3F;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: 400;
 }
 
 .newsletter {
