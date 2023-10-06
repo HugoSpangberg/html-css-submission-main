@@ -27,6 +27,7 @@ html, body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
+  transition: 0.2s;
 
   i {
     margin-left: 5px;
@@ -50,6 +51,7 @@ html, body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
+  transition: 0.2s;
 
   i {
     margin-left: 5px;
@@ -73,7 +75,7 @@ html, body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
-  transition: s;
+  transition: .2s;
 
   i {
     padding-left: 5px;
@@ -160,10 +162,16 @@ header {
       font-family: 'Inter', sans-serif;
       font-size: 15px;
       font-weight: 300;
+      transition: .2s;
 
       i {
         margin-right: 5px;
         font-size: 1.3em;
+        color: #666666;
+
+      }
+      a {
+        text-decoration: none;
         color: #666666;
 
       }
@@ -172,14 +180,15 @@ header {
         border: none;
 
       }
+      &:hover {
+        transform: scale(1.1);
+      }
     } 
   }
   .socialmedia-bar {
     grid-area: social;
     display: none;
-
     
-
     @media (min-width: 992px) {
       display: flex;
     }
@@ -187,7 +196,7 @@ header {
       a {
         color: #191919;
         font-size: 1.3rem;
-        margin: 0 5px;
+        margin: 0 8px;
       }
 
       &:hover {
@@ -320,8 +329,13 @@ header {
 .sponsor {
   padding-top: 100px;
   .container {
-    display: flex;
+    display: none;
     justify-content: space-between;
+
+    @media (min-width: 992px) {
+
+      display: flex;
+    }
   }
 }
 
@@ -332,7 +346,7 @@ header {
   .container {
     display: flex;
     justify-content: center;
-    
+
     .section-title{
 
       margin-top: 0px;
@@ -359,7 +373,7 @@ header {
         text-decoration: none;
         font-size: 16px;
         font-weight: 600;
-
+        transition: .2s;
         &:hover {
           border: 1px solid #191919;
           background-color: #191919;
@@ -390,10 +404,27 @@ header {
 }
 
 .about-company {
+  padding-bottom: 30px;
   .container {
     display: flex;
-    
+    // margin: 100px;
+
+    @media (max-width: 1200px) {
+      display: block;
+      // margin: 50px;
+      justify-content: center;
+
+
+    }
     .ceo-pic {
+      display: flex;
+      position: relative;
+      @media (max-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+      
       .founder {
         display: flex;
         flex-direction: column;
@@ -403,9 +434,18 @@ header {
         background-color: #BEEBFF;
         width: 368px;
         height: 180px;
-        position: relative;
-        bottom: 220px;
-        right: 80px;
+        position: absolute;
+        bottom: 40px;
+        left: -40px;
+        @media (max-width: 1200px) {
+          display: flex;
+          justify-content: center;
+          left: 150px;
+        }
+        img {
+
+
+        }
 
         h4 {
           padding-left: 10px;
@@ -434,6 +474,10 @@ header {
       margin: 0;
       padding-left: 200px;
       padding-right: 30px;
+
+      @media (max-width: 1400px) {
+        padding-left: 40px;
+      }
       
       p {
         padding-bottom: 5px;
@@ -442,6 +486,7 @@ header {
         
       }
       h6{
+        
         padding-top: 40px;
         line-height: 1.8;
         font-weight: 300;
@@ -449,15 +494,16 @@ header {
       .buttons-flex {
         display: flex;
         margin-top: 100px;
+
+
+
         .buttons {
 
-          
 
-          
           .btn-black {
             background-color: #191919;
             border: 1px solid #191919;
-            border-radius: 40px;
+            border-radius: 50px;
             padding: 18px 56px;
             color: #ffffff;
             text-decoration: none;
@@ -465,6 +511,10 @@ header {
             font-weight: 400;
             transition: 0.2s;
             margin-right: 35px;
+
+            @media (max-width: 1200px) {
+              margin-bottom: 20px;
+            }
     
             i {
               padding-left: 5px;
@@ -482,11 +532,6 @@ header {
               font-weight: 400;
             }
           }
-  
-  
-  
-          
-  
         }
         .buttons {
           display: flex;
@@ -555,7 +600,12 @@ header {
       justify-content: space-between;
       gap: 20px;
 
-
+      @media (max-width: 1200px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+  
+      }
 
         .content {
           display: flex;
@@ -648,7 +698,6 @@ header {
   }
 }
 
-
 .choose-us {
   position: relative;
   .container{
@@ -656,19 +705,22 @@ header {
     justify-content: space-between;
     padding: 100px;
 
-
-
-
+    @media (max-width: 1400px) {
+      display: block;
+    }
     .section-title {
       margin: 0;
-      
-      
+
       .strategies {
         display: flex;
-        
         flex-direction: column;
-        
-        
+
+        @media (max-width: 1400px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin-bottom: 75px
+    
+        }
         .strategies-parent {
           display: flex;
           padding-top: 25px;
@@ -699,19 +751,22 @@ header {
             }
           }
         }
-
       }
     }
-
   }
       .background {
-
+        display: flex;
+        justify-content: center;
 
       img {
         position: relative;
         bottom: 0px;
         left: 80px;
 
+        @media (max-width: 1400px) {
+          left: 0px;
+
+        }
 
       }
     }
@@ -725,8 +780,12 @@ header {
       top: 0;
       right: 0;
 
-      
-
+      @media (max-width: 1400px) {
+        width: 100%;
+        top: 400px;
+        right: 0;
+  
+      }
     }
 }
 
@@ -742,7 +801,6 @@ header {
 
     .section-title {
       text-align: center;
-
     }
 
     .project-and-cases {
@@ -751,51 +809,58 @@ header {
       grid-template-columns: 1fr;
       gap: 30px;
 
-      // grid-template-areas: "grow business"
-      //                     "educate insights";
       @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
       }
-
       
-      
-      h3 {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 22px;
-        border-bottom: 1px solid #DAD9D3;
-        padding-bottom: 20px;
-        padding-top: 30px;
+      .project-parent {
+        display: inline-block;
 
-      }
-      img {
-        width: 100%;
-        height: auto;
-
-        &:hover {
-
-
-          opacity: .6;
-          transition: .2s ease;
-          background-color: #008CBA;
+        .project-child {
+          h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            border-bottom: 1px solid #DAD9D3;
+            padding-bottom: 20px;
+            margin-top: 30px;
+          }
+          img {
+            width: 100%;
+            height: auto;   
+          }
+          &:hover {
+            img {
+                opacity: .6;
+                transition: .2s ease;
+                background-color: #008CBA;
+            }
+            h3 {
+              text-decoration: underline;
+            }
+            cursor: pointer;
+          }
         }
-      }
-      .link {
-        display: flex;
-        justify-content: end;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        a {
-          font-weight: 400;
-          font-size: 14px;
-          text-decoration: none;
-          color: #191919;
-          align-items: center;
-          display: inline-block;
+        .link {
+          display: flex;
+          justify-content: end;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          a {
+            font-weight: 400;
+            font-size: 14px;
+            text-decoration: none;
+            color: #191919;
+            align-items: center;
+            display: inline-block;
+
+            &:hover {
+              font-weight: 700;
+              text-decoration: underline;
+            }
+          }
+
         }
-
-
-
       }
     }
     
@@ -814,11 +879,10 @@ header {
         text-decoration: none;
         font-size: 16px;
         font-weight: 400;
-        transition: s;
+        transition: 0.2s;
 
         i {
           padding-left: 5px;
-          
           font-weight: 400;
         }
         &:hover {
@@ -832,9 +896,7 @@ header {
           font-weight: 400;
         }
       }
-
     }
-
   }
 }
 
@@ -927,7 +989,20 @@ header {
       display: flex;
       justify-content: space-between;
       gap: 30px;
+
+      @media (max-width: 992px) {
+        display: block;
+  
+      }
+
+
       .clients-parent {
+
+        @media (max-width: 992px) {
+          margin-bottom: 50px;
+
+        }
+
         i {
           color: #F94D1C;
         }
@@ -936,12 +1011,15 @@ header {
           margin-top: 10px;
           margin-right: 20px;
           line-height: 34px;
+          text-align: center;
           
         }
         .client-child {
           display: flex;
           padding-top: 20px;
-          img {}
+          img {
+
+          }
 
           .text-child {
             margin-left: 10px;
@@ -950,12 +1028,13 @@ header {
               font-weight: 700;
               font-size: 22px;
               margin-bottom: -8px;
+
             }
             p {
               color: #F94D1C;
-            }
-          }
 
+            }
+          } 
         }
       }
     }
