@@ -105,6 +105,7 @@ header {
 header .container {
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-columns: 1fr auto auto;
   grid-template-areas: "logo bars";
 }
@@ -232,6 +233,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 .showcase .container .content {
   padding-top: 40px;
@@ -315,9 +317,24 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1200px) {
+  .features .container {
+    display: block;
+  }
+}
 .features .container .section-title {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+@media (max-width: 1200px) {
+  .features .container .section-title {
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) and (max-width: 992px) {
+  .features .container .section-title h2 {
+    font-size: 40px;
+  }
 }
 .features .container .features-left {
   flex: 1;
@@ -348,6 +365,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   grid-template-columns: 1fr 1fr;
   padding: 50px;
   gap: 75px;
+}
+@media (max-width: 992px) {
+  .features .container .features-right {
+    display: block;
+  }
 }
 .features .container .features-right .features-right-child img {
   padding-bottom: 20px;
@@ -419,9 +441,20 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   padding-left: 200px;
   padding-right: 30px;
 }
+@media (max-width: 1200px) {
+  .about-company .container .section-title {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
 @media (max-width: 1400px) {
   .about-company .container .section-title {
     padding-left: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .about-company .container .section-title h2 {
+    font-size: 40px;
   }
 }
 .about-company .container .section-title p {
@@ -513,8 +546,14 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .service .container .section-title {
   margin: 0;
-  width: 500px;
+  padding-right: 500px;
   padding-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .service .container .section-title {
+    text-align: center;
+    padding-right: 0px;
+  }
 }
 .service .container .diff-service {
   display: flex;
@@ -526,6 +565,12 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+}
+@media (max-width: 1200px) and (max-width: 992px) {
+  .service .container .diff-service {
+    display: block;
+    width: 75%;
   }
 }
 .service .container .diff-service .content {
@@ -557,6 +602,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .service .container .diff-service .content .btn-flex {
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 992px) {
+  .service .container .diff-service .content .btn-flex {
+    padding-bottom: 20px;
+  }
 }
 .service .container .diff-service .content .btn-flex .btn-transparent {
   width: 60px;
@@ -790,6 +840,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   align-items: center;
   margin-bottom: 90px;
 }
+@media (max-width: 992px) {
+  .meet-our-team .container .team-member {
+    display: block;
+  }
+}
 .meet-our-team .container .team-member a {
   border: 1px solid #191919;
 }
@@ -800,6 +855,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+}
+@media (max-width: 992px) {
+  .meet-our-team .container .team-member-pic {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .meet-our-team .container .team-member-pic img {
   width: 100%;
@@ -903,6 +963,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   align-items: end;
   padding: 75px 0;
 }
+@media (max-width: 992px) {
+  .articlenews .container .articles-title {
+    display: block;
+  }
+}
 .articlenews .container .articles-title .section-title {
   margin: 0;
   padding: 0;
@@ -916,6 +981,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .articlenews .container .article {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 992px) {
+  .articlenews .container .article {
+    display: block;
+  }
 }
 .articlenews .container .article .article-section h6 {
   margin-top: 20px;
@@ -1034,6 +1104,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   grid-template-columns: 1.9fr 1.2fr 1.2fr 1.2fr 1.2fr;
   position: relative;
 }
+@media (max-width: 992px) {
+  .footer .container .logo {
+    display: none;
+  }
+}
 .footer .container .logo .space {
   padding-right: 50px;
 }
@@ -1052,6 +1127,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   gap: 10px;
   padding-bottom: 90px;
   padding-left: 50px;
+}
+@media (max-width: 992px) {
+  .footer .container .Links {
+    display: none;
+  }
 }
 .footer .container .Links a {
   text-decoration: none;

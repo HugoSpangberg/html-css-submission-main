@@ -117,6 +117,7 @@ header {
 
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-columns: 1fr auto auto;
   grid-template-areas: "logo bars";
   
@@ -262,6 +263,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
     .content {
       padding-top: 40px;
       padding-bottom: 40px;
@@ -269,6 +271,7 @@ header {
 
       @media (min-width: 1200px){
         text-align: left;
+
       }
       h1 {
         font-family: 'DM Sans', sans-serif;
@@ -347,10 +350,25 @@ header {
     display: flex;
     justify-content: center;
 
+    @media (max-width: 1200px) {
+      display: block;
+    }
+
     .section-title{
 
       margin-top: 0px;
       margin-bottom: 0px;
+
+      @media (max-width: 1200px) {
+        text-align: center;
+        
+        @media (max-width: 992px) {
+          h2 {
+            font-size: 40px;
+          }
+        }
+
+      }
       
       
     }
@@ -390,7 +408,9 @@ header {
       padding: 50px;
       gap: 75px;
 
-      
+      @media (max-width: 992px) {
+        display: block;
+      }
       .features-right-child {
         
         img {
@@ -475,8 +495,19 @@ header {
       padding-left: 200px;
       padding-right: 30px;
 
+      @media (max-width: 1200px) {
+        text-align: center;
+        margin-top: 30px;
+      }
+
       @media (max-width: 1400px) {
         padding-left: 40px;
+      }
+
+      @media (max-width: 992px) {
+        h2 {
+          font-size: 40px;
+        }
       }
       
       p {
@@ -591,8 +622,14 @@ header {
   .container {
     .section-title {
       margin: 0;
-      width: 500px;
+      padding-right: 500px;
       padding-bottom: 30px;
+
+      @media (max-width: 1200px) {
+        text-align: center;
+        padding-right: 0px;
+        
+      }
     }
 
     .diff-service {
@@ -604,6 +641,13 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 60px;
+
+        @media (max-width: 992px) {
+          display: block;
+          width: 75%;
+          
+          
+        }
   
       }
 
@@ -639,6 +683,11 @@ header {
           .btn-flex {
             display: flex;
             justify-content: flex-end;
+            @media (max-width: 992px) {
+              padding-bottom: 20px;
+              
+            }
+            
 
             .btn-transparent {
               width: 60px;
@@ -655,6 +704,7 @@ header {
               font-weight: 600;
               transition: 0.2s;
               cursor: pointer;
+              
 
               i {
                 margin: 0;
@@ -912,6 +962,10 @@ header {
       justify-content: space-between;
       align-items: center;
       margin-bottom: 90px;
+      @media (max-width: 992px) {
+        display: block;
+  
+      }
 
       a {
         border: 1px solid #191919;
@@ -928,10 +982,20 @@ header {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 10px;
       
+      @media (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+        
+      }
 
       img {
         width: 100%;
         height: auto;
+
+        @media (max-width: 992px) {
+
+
+    
+        }
       }
       h4 {
         margin-top: 20px;
@@ -1053,6 +1117,10 @@ header {
       justify-content: space-between;
       align-items: end;
       padding: 75px 0;
+
+      @media (max-width: 992px) {
+        display: block;
+      }
       .section-title {
         margin: 0;
         padding: 0;
@@ -1078,6 +1146,10 @@ header {
     .article {
       display: flex;
       gap: 20px;
+
+      @media (max-width: 992px) {
+        display: block;
+      }
 
       .article-section {
 
@@ -1214,6 +1286,9 @@ header {
     position: relative;
 
     .logo {
+      @media (max-width: 992px) {
+        display: none;
+      }
       .space {
         padding-right: 50px;
         img {
@@ -1234,6 +1309,10 @@ header {
       gap: 10px;
       padding-bottom: 90px;
       padding-left: 50px;
+      
+      @media (max-width: 992px) {
+        display: none;
+      }
 
       a {
         text-decoration: none;
