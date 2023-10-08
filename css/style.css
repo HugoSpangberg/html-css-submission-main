@@ -1092,6 +1092,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   bottom: 47px;
   right: 0;
 }
+@media (max-width: 1400px) {
+  .newsletter .background-lines-right {
+    bottom: 10px;
+  }
+}
 .newsletter .container {
   display: flex;
   justify-content: space-around;
