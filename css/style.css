@@ -97,6 +97,11 @@ html, body {
   font-weight: 700;
   font-size: 45px;
 }
+@media (max-width: 992px) {
+  .section-title h2 {
+    font-size: 35px;
+  }
+}
 
 header {
   background-color: #F0eFe9;
@@ -331,11 +336,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     text-align: center;
   }
 }
-@media (max-width: 1200px) and (max-width: 992px) {
-  .features .container .section-title h2 {
-    font-size: 40px;
-  }
-}
 .features .container .features-left {
   flex: 1;
   display: flex;
@@ -450,11 +450,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 @media (max-width: 1400px) {
   .about-company .container .section-title {
     padding-left: 40px;
-  }
-}
-@media (max-width: 992px) {
-  .about-company .container .section-title h2 {
-    font-size: 40px;
   }
 }
 .about-company .container .section-title p {
@@ -682,6 +677,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     margin-bottom: 75px;
   }
 }
+@media (max-width: 992px) {
+  .choose-us .container .section-title .strategies {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 75px;
+  }
+}
 .choose-us .container .section-title .strategies .strategies-parent {
   display: flex;
   padding-top: 25px;
@@ -736,6 +738,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   .choose-us .background-parent {
     width: 100%;
     top: 400px;
+    right: 0;
+  }
+}
+@media (max-width: 992px) {
+  .choose-us .background-parent {
+    width: 100%;
+    top: 600px;
     right: 0;
   }
 }
@@ -850,6 +859,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .meet-our-team .container .team-member .section-title {
   margin: 0;
+  padding-bottom: 20px;
 }
 .meet-our-team .container .team-member-pic {
   display: grid;
@@ -933,11 +943,15 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   margin-top: 10px;
   margin-right: 20px;
   line-height: 34px;
-  text-align: center;
 }
 .testimonial .container .clients .clients-parent .client-child {
   display: flex;
   padding-top: 20px;
+  height: auto;
+}
+.testimonial .container .clients .clients-parent .client-child img {
+  width: 20%;
+  height: 10%;
 }
 .testimonial .container .clients .clients-parent .client-child .text-child {
   margin-left: 10px;
@@ -982,6 +996,10 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: flex;
   gap: 20px;
 }
+.articlenews .container .article a {
+  text-decoration: none;
+  color: #191919;
+}
 @media (max-width: 992px) {
   .articlenews .container .article {
     display: block;
@@ -1011,6 +1029,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .articlenews .container .article .article-section .image-date img {
   width: 100%;
   height: auto;
+  transition: 0.2s;
 }
 .articlenews .container .article .article-section .image-date .date {
   display: flex;
@@ -1022,7 +1041,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   position: absolute;
   margin: 10px;
 }
-.articlenews .container .article .article-section .image-date .date h3 {
+.articlenews .container .article .article-section .image-date .date h2 {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -1037,6 +1056,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-size: 16px;
   font-family: "inter";
   font-weight: 400;
+}
+.articlenews .container .article .article-section:hover h3 {
+  text-decoration: underline;
 }
 .articlenews .container .dots-parent {
   display: flex;
@@ -1090,6 +1112,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   outline: none;
   border: 1px solid rgba(25, 25, 25, 0.1);
   margin-right: 20px;
+}
+.newsletter .container form button {
+  margin-top: 10px;
 }
 
 .footer {
@@ -1159,6 +1184,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   background-color: #0E1021;
   border-top: 1px solid #707070;
 }
+.footer .rights-social-media .element img {
+  color: red;
+}
 .footer .rights-social-media .container {
   display: flex;
   justify-content: space-between;
@@ -1188,7 +1216,10 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .footer .element {
   position: absolute;
-  bottom: 0;
+  bottom: 75px;
   right: 0;
   z-index: -1;
+}
+.footer .element img {
+  opacity: 0.6;
 }

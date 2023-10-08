@@ -108,6 +108,15 @@ html, body {
     font-weight: 700;
     font-size: 45px;
   }
+
+  @media (max-width: 992px) {
+
+    h2 {
+      font-size: 35px;
+    }
+    
+
+  }
 }
 
 header {
@@ -362,11 +371,6 @@ header {
       @media (max-width: 1200px) {
         text-align: center;
         
-        @media (max-width: 992px) {
-          h2 {
-            font-size: 40px;
-          }
-        }
 
       }
       
@@ -504,11 +508,6 @@ header {
         padding-left: 40px;
       }
 
-      @media (max-width: 992px) {
-        h2 {
-          font-size: 40px;
-        }
-      }
       
       p {
         padding-bottom: 5px;
@@ -771,6 +770,13 @@ header {
           margin-bottom: 75px
     
         }
+
+        @media (max-width: 992px) {
+          display: grid;
+          grid-template-columns: 1fr;
+          margin-bottom: 75px
+    
+        }
         .strategies-parent {
           display: flex;
           padding-top: 25px;
@@ -836,6 +842,13 @@ header {
         right: 0;
   
       }
+
+      @media (max-width: 992px) {
+        width: 100%;
+        top: 600px;
+        right: 0;
+  
+      }
     }
 }
 
@@ -843,11 +856,6 @@ header {
 
 
   .container {
-    @media (min-width: 1400px) {
-      
-    }
-
-
 
     .section-title {
       text-align: center;
@@ -956,7 +964,6 @@ header {
   padding-top: 125px;
   .container {
 
-    
     .team-member {
       display: flex;
       justify-content: space-between;
@@ -964,16 +971,16 @@ header {
       margin-bottom: 90px;
       @media (max-width: 992px) {
         display: block;
-  
       }
 
       a {
         border: 1px solid #191919;
+        
       }
 
       .section-title {
         margin: 0;
-        
+        padding-bottom: 20px;
       }
     }
 
@@ -1075,14 +1082,17 @@ header {
           margin-top: 10px;
           margin-right: 20px;
           line-height: 34px;
-          text-align: center;
+          // text-align: center;
           
         }
         .client-child {
           display: flex;
           padding-top: 20px;
-          img {
 
+          height: auto;
+          img {
+            width: 20%;
+            height: 10%;
           }
 
           .text-child {
@@ -1147,11 +1157,14 @@ header {
       display: flex;
       gap: 20px;
 
+      a{text-decoration: none; color: #191919;}
+
       @media (max-width: 992px) {
         display: block;
       }
 
       .article-section {
+
 
         h6 {
           margin-top: 20px;
@@ -1175,6 +1188,7 @@ header {
           img {
             width: 100%;
             height: auto;
+            transition: .2s;
           }
           
           position: relative;
@@ -1189,7 +1203,7 @@ header {
             position: absolute;
             margin: 10px;
             
-            h3 {
+            h2 {
               margin: 0;
               display: flex;
               justify-content: center;
@@ -1206,6 +1220,11 @@ header {
               font-weight: 400;
             }
 
+          }
+        }
+        &:hover {
+          h3 {
+            text-decoration: underline;
           }
         }
       }
@@ -1268,6 +1287,10 @@ header {
         outline: none;
         border: 1px solid rgb(25, 25, 25, 0.10);
         margin-right: 20px;
+        
+      }
+      button {
+        margin-top: 10px;
       }
     }
   }
@@ -1345,6 +1368,12 @@ header {
     background-color: #0E1021;
     border-top: 1px solid #707070;
 
+    .element {
+      img {
+        color: red;
+      }
+    }
+
     .container {
       display: flex;
       justify-content: space-between;
@@ -1381,8 +1410,11 @@ header {
 
   .element {
     position: absolute;
-    bottom: 0;
+    bottom: 75px;
     right: 0;
     z-index: -1; 
+    img {
+      opacity: .6;
+    }
   }
 }
